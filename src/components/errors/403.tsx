@@ -1,5 +1,6 @@
 import {useNavigate} from "react-router-dom";
 import {Button, Result} from "antd";
+import "./index.less";
 
 const Forbidden = () => {
     const navigate = useNavigate();
