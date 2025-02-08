@@ -1,9 +1,11 @@
 import { createHashRouter, RouteObject } from 'react-router-dom';
+import MainLayout from '../layouts';
+import LoginPage from '../pages/login';
 
 export const routes: RouteObject[] = [
     {
         path: "/",
-        element: <div>Root</div>,
+        element: <MainLayout />,
         children: [
             {
                 path: "/home",
@@ -13,11 +15,11 @@ export const routes: RouteObject[] = [
     },
     {
         path: "/login",
-        element: <div>Login</div>
+        element: <LoginPage />
     },
     {
         path: "*",
-        element: <div>not found</div>
+        element: <div>404 Not Found</div>
     }
 ];
 

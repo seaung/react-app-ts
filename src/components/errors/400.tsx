@@ -9,7 +9,7 @@ const BadRequest = () => {
     }
     return (
         <Result
-            status='400'
+            status='403'
             title='坏的请求'
             subTitle='非常抱歉您请求的方式不合法'
             extra={<Button type='primary' onClick={goHome}>返回</Button>}
